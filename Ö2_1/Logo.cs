@@ -21,8 +21,7 @@ namespace Ö2_1
             this.stopX = stopX;
             this.stopY = stopY;
         }//tjena
-        //hallå
-        //hejhejehj
+        //HejEh
 
 
 
