@@ -4,6 +4,7 @@ using System.Linq;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace Ö2_1
@@ -20,8 +21,21 @@ namespace Ö2_1
             this.pos = pos;
             this.stopX = stopX;
             this.stopY = stopY;
-        }//tjena
-        //HejEh
+        }
+        public void Update();
+        {
+            if(pos.X < stopX && pos.Y < stopY)
+            {
+                pos.X = pos.X + 1;
+                pos.Y = pos.Y + 1;
+            }
+        }
+
+        public void Draw(SpriteBatch sb){
+            sb.Draw(tex, pos, Color.White);
+        }
+            
+        
 
 
 
